@@ -1,0 +1,49 @@
+.node-network-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.node-network {
+  position: relative;
+  display: grid;
+  top: 5vh;
+  align-content: center;
+  justify-items: center;
+  grid-template-rows: repeat(20, 4vh);
+  grid-template-columns: repeat(40, 2vw);
+}
+
+.node-src,
+.node-dest {
+  border-radius: 5px;
+  width: 3vh;
+  height: 3vh;
+  transition-duration: 0.20s;
+  transition-property: transform;
+}
+
+.node-src {
+  background-color: crimson;
+}
+
+.node-dest {
+  background-color: royalblue;
+}
+
+.node-src:hover{
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.node-dest:hover{
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.node-backtracked {
+  background-color: yellow;
+}
