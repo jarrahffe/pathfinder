@@ -43,7 +43,3 @@
   transform: rotate(90deg);
   cursor: pointer;
 }
-
-.node-backtracked {
-  background-color: yellow;
-}

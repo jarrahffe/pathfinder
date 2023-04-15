@@ -11,6 +11,14 @@ type NodeNetworkContext = {
   setVisited: React.Dispatch<React.SetStateAction<Set<string>>>
   backTracked: Set<string>
   setBackTracked: React.Dispatch<React.SetStateAction<Set<string>>>
+  finished: boolean
+  setFinished: React.Dispatch<React.SetStateAction<boolean>>
+  mouseHeld: React.MutableRefObject<boolean>
+  resetAll: boolean
+  setResetAll: React.Dispatch<React.SetStateAction<boolean>>
+  resetPath: boolean
+  setResetPath: React.Dispatch<React.SetStateAction<boolean>>
+
 }
 
 export const NodeNetworkContext = React.createContext({} as NodeNetworkContext);
